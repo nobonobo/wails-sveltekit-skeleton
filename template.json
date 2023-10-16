@@ -1,0 +1,7 @@
+{
+  "name": "SvelteKit & Skelton for Wails",
+  "shortname": "sveltekit",
+  "author": "nobonobo <irieda@gmail.com>",
+  "description": "A template using SvelteKit",
+  "helpurl": "https://github.com/nobonobo/wails-sveltekit-skelton"
+}
