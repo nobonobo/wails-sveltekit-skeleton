@@ -1,38 +1,27 @@
-# create-svelte
+# wails-sveltekit
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## About
 
-## Creating a project
+A template using SvelteKit
 
-If you're seeing this, you've probably already done this step. Congrats!
+## prerequire
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- go 1.21~
+- npm 10~
 
-# create a new project in my-app
-npm create svelte@latest my-app
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+go install github.com/wailsapp/wails/v2/cmd/wails@latest
+wails init -n sample -t https://github.com/nobonobo/wails-sveltekit
+cd sample
 ```
 
 ## Building
 
-To create a production version of your app:
+To build this project in debug mode, use `wails build`. For production, use `wails build -production`.
+To generate a platform native package, add the `-package` flag.
 
-```bash
-npm run build
-```
+## Live Development
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+To run in live development mode, run `wails dev` in the project directory. In another terminal, go into the `frontend`
+directory and run `npm run dev`. The frontend dev server will run on http://localhost:34115. Connect to this
+in your browser and connect to your application.
