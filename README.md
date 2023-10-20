@@ -1,4 +1,4 @@
-# wails-sveltekit-skelton
+# wails-sveltekit-skeleton
 
 ## About
 
@@ -11,7 +11,7 @@ A template using SvelteKit
 
 ```
 go install github.com/wailsapp/wails/v2/cmd/wails@latest
-wails init -n sample -t https://github.com/nobonobo/wails-sveltekit-skelton
+wails init -n sample -t https://github.com/nobonobo/wails-sveltekit-skeleton
 cd sample
 ```
 
