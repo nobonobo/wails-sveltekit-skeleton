@@ -19,16 +19,16 @@ func main() {
 
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "{{.ProjectName}}",
-		Width:  1024,
-		Height: 768,
-		// MinWidth:          720,
-		// MinHeight:         570,
+		Title:     "{{.ProjectName}}",
+		Width:     720,
+		Height:    400,
+		MinWidth:  720,
+		MinHeight: 400,
 		// MaxWidth:          1280,
 		// MaxHeight:         740,
 		DisableResize:     false,
 		Fullscreen:        false,
-		Frameless:         false,
+		Frameless:         true,
 		StartHidden:       false,
 		HideWindowOnClose: false,
 		BackgroundColour:  &options.RGBA{255, 255, 255, 255},
