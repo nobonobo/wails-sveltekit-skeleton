@@ -2,6 +2,11 @@
   import { AppBar } from "@skeletonlabs/skeleton";
   import { LightSwitch } from "@skeletonlabs/skeleton";
   import "../app.postcss";
+  import { onMount } from "svelte";
+  import { setInitialClassState } from "@skeletonlabs/skeleton";
+  onMount(() => {
+    setInitialClassState();
+  });
 </script>
 
 <div style="--wails-draggable: drag">
